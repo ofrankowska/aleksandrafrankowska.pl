@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "aleksandrafrankowska",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Aleksandra Frankowska portofolio",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Aleksandra Frankowska <olafrankowska112@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.4",
     "gatsby-image": "^2.2.34",
@@ -19,7 +19,21 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "gatsby-plugin-eslint": "^2.0.8",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "stylelint": "^12.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.9.0",
+    "stylelint-webpack-plugin": "^1.1.2"
   },
   "keywords": [
     "gatsby"
@@ -40,5 +54,19 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --config .prettierrc --write",
+      "eslint --fix",
+      "stylelint --fix",
+      "git add"
+    ]
   }
-}
+  }
+
