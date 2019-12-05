@@ -1,9 +1,10 @@
 import React from 'react';
+import MainTemplate from 'templates/MainTemplate';
 
 const IndexPage = () => (
-  <div>
-    <h1>hello world</h1>
-  </div>
+  <MainTemplate>
+    <h1>hello world!</h1>
+  </MainTemplate>
 );
 
 export default IndexPage;
