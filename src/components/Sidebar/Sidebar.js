@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Link, NavLink } from 'gatsby';
+import { Link } from 'gatsby';
 
 const onHover = ({ theme }) => `
     :hover {
@@ -57,32 +57,38 @@ const StyledLinkList = styled.ul`
   padding: 0;
   margin: 0;
   font-size: ${({ theme }) => theme.fontSize.m};
+`;
 
-  li {
-    margin: 40px 0;
-    ${onHover}
-    position: relative;
+const NavigationItem = styled.li`
+  margin: 40px 0;
+  ${onHover}
+  position: relative;
+  ::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: ${({ theme }) => theme.yellow};
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(0);
+    transition: transform 0.3s ease-out;
+  }
+  :hover {
     ::after {
-      content: '';
-      display: block;
-      position: absolute;
       width: 100%;
-      height: 6px;
-      background-color: ${({ theme }) => theme.yellow};
-      z-index: -1;
-      background-size: cover;
-      background-repeat: no-repeat;
-      transform: scale(0);
-      transition: transform 0.3s ease-out;
-    }
-    :hover {
-      ::after {
-        width: 100%;
-        transform: scale(1);
-      }
+      transform: scale(1);
     }
   }
 `;
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+`;
+
 const IconWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -96,26 +102,36 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 const Sidebar = () => (
   <StyledWrapper>
-    <LogoWrapper as={Link} to="/">
-      <p>Aleksandra</p>
-      <p>Frankowska</p>
+    <LogoWrapper>
+      <StyledLink to="/">
+        <p>Aleksandra</p>
+        <p>Frankowska</p>
+      </StyledLink>
     </LogoWrapper>
     <StyledLinkList>
-      <li as={NavLink} to="/about-me">
-        about me
-      </li>
-      <li as={NavLink} to="/skills">
-        skills
-      </li>
-      <li as={NavLink} to="/projects">
-        projects
-      </li>
+      <NavigationItem>
+        <StyledLink to="/about-me">about me</StyledLink>
+      </NavigationItem>
+      <NavigationItem>
+        <StyledLink to="/skills">skills</StyledLink>
+      </NavigationItem>
+      <NavigationItem>
+        <StyledLink to="/projects">projects</StyledLink>
+      </NavigationItem>
     </StyledLinkList>
     <IconWrapper>
-      <a href="https://linkedin.com">
+      <a
+        href="https://github.com/ofrankowska/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <StyledIcon icon={faGithubSquare} />
       </a>
-      <a href="https://github.io/ofrankowska">
+      <a
+        href="https://www.linkedin.com/in/aleksandra-frankowska-52603518a/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <StyledIcon icon={faLinkedin} />
       </a>
     </IconWrapper>

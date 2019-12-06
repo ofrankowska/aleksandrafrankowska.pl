@@ -6,19 +6,18 @@ const Button = styled.button`
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: ${({ theme }) => theme.medium};
   border-radius: 10px;
-  width: 117px;
+  width: 127px;
   height: 38px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: color 0.3s ease-out;
-
   ::after {
     position: absolute;
     display: inline-block;
     content: '';
     width: 100%;
-    height: 100%;
+    height: 110%;
     top: 0;
     right: 0;
     background-color: ${({ theme }) => theme.yellow};
@@ -30,7 +29,7 @@ const Button = styled.button`
   :hover {
     color: white;
     ::after {
-      transform: translateY(0);
+      transform: translateY(-5%);
     }
   }
 `;
