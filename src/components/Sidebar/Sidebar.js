@@ -35,7 +35,7 @@ const LogoWrapper = styled.div`
   ${onHover};
   p:first-child {
     margin: 7px 0 0;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08rem;
   }
   p:last-child {
     margin: 0 0 7px;

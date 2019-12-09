@@ -1,32 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import SEO from 'components/seo';
 import Sidebar from 'components/Sidebar/Sidebar';
 import Footer from 'components/Footer/Footer';
 import GlobalStyle from 'assets/styles/GlobalStyle';
 
 import { theme } from 'assets/styles/theme';
 
+const StyledWrapper = styled.div`
+  display: grid;
+  grid-template-rows: 1fr 165px;
+  min-height: 100vh;
+`;
+
 const MainTemplate = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
+      <SEO />
       <GlobalStyle />
       <Sidebar />
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateRows: '1fr 165px',
-          minHeight: '100vh',
-        }}
-      >
+      <StyledWrapper>
         {children}
         <Footer />
-      </div>
+      </StyledWrapper>
     </ThemeProvider>
   );
 };
 
 MainTemplate.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };
 export default MainTemplate;
