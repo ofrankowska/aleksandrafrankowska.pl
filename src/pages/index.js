@@ -1,21 +1,27 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import ContentTemplate from 'templates/ContentTemplate';
+import Heading from 'components/Heading/Heading';
+import styled from 'styled-components';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+const PageTitle = styled(Heading)`
+  font-size: ${({ theme }) => theme.fontSize.xxl};
+  margin: 17vh 0 0;
+`;
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+  <ContentTemplate>
+    <StyledWrapper>
+      <PageTitle bold>Frontend Developer</PageTitle>
+      <Heading withUnderline width="490px">
+        Aleksandra Frankowska
+      </Heading>
+    </StyledWrapper>
+  </ContentTemplate>
+);
 
-export default IndexPage
+export default IndexPage;
