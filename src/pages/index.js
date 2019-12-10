@@ -16,7 +16,7 @@ const StyledWrapper = styled.div`
 const PageTitleWrapper = styled.div`
   padding-left: 75px;
 `;
-const PageTitle = styled(Heading)`
+const PageTitle = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.xxl};
   margin: 17vh 0 0;
 `;
@@ -26,9 +26,7 @@ const IndexPage = () => (
     <StyledWrapper>
       <PageTitleWrapper>
         <PageTitle bold>Frontend Developer</PageTitle>
-        <Heading withUnderline width="490px">
-          Aleksandra Frankowska
-        </Heading>
+        <Heading withUnderline>Aleksandra Frankowska</Heading>
       </PageTitleWrapper>
     </StyledWrapper>
   </MainTemplate>
