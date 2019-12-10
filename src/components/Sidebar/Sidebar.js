@@ -11,6 +11,7 @@ const onHover = ({ theme }) => `
       cursor: pointer;
   } 
 `;
+
 const StyledWrapper = styled.div`
   position: fixed;
   z-index: 999;
@@ -100,6 +101,9 @@ const StyledIcon = styled(FontAwesomeIcon)`
   color: white;
   ${onHover}
 `;
+const activeStyles = {
+  color: '#F0C220',
+};
 const Sidebar = () => (
   <StyledWrapper>
     <LogoWrapper>
@@ -110,13 +114,19 @@ const Sidebar = () => (
     </LogoWrapper>
     <StyledLinkList>
       <NavigationItem>
-        <StyledLink to="/about-me">about me</StyledLink>
+        <StyledLink to="/about-me" activeStyle={activeStyles}>
+          about me
+        </StyledLink>
       </NavigationItem>
       <NavigationItem>
-        <StyledLink to="/skills">skills</StyledLink>
+        <StyledLink to="/skills" activeStyle={activeStyles}>
+          skills
+        </StyledLink>
       </NavigationItem>
       <NavigationItem>
-        <StyledLink to="/projects">projects</StyledLink>
+        <StyledLink to="/projects" activeStyle={activeStyles}>
+          projects
+        </StyledLink>
       </NavigationItem>
     </StyledLinkList>
     <IconWrapper>

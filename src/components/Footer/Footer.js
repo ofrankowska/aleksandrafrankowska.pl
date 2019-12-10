@@ -13,10 +13,6 @@ const StyledWrapper = styled.div`
   padding: 20px 20px 20px 75px;
 `;
 
-const StyledHeading = styled(Heading)`
-  margin: 0 0 5px;
-`;
-
 const StyledLink = styled.a`
   color: ${({ theme }) => theme.blue};
   font-size: ${({ theme }) => theme.fontSize.m};
@@ -33,7 +29,7 @@ const StyledParagraph = styled(Paragraph)`
 
 const Footer = () => (
   <StyledWrapper>
-    <StyledHeading bold>get in touch</StyledHeading>
+    <Heading bold>get in touch</Heading>
     <StyledLink href="mailto:olafrankowska112@gmail.com">
       olafrankowska112@gmail.com
     </StyledLink>

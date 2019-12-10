@@ -5,7 +5,7 @@ import Heading from 'components/Heading/Heading';
 const AboutMeggaPage = () => (
   <ContentTemplate>
     <div>
-      <Heading bold>AboutMegga</Heading>
+      <Heading bold>About Me</Heading>
     </div>
   </ContentTemplate>
 );

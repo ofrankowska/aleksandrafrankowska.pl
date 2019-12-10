@@ -39,7 +39,7 @@ const projects = [
       'Creating an intuitive, minimalistic website that makes it easy to find what you want and is pretty nice to look at.',
     goal:
       'Creating a website from scratch - staring with the design in Figma, development in Gatsby and deployment with Netlify.',
-    technologies: 'Gatsby / React / Figma',
+    technologies: 'Gatsby / React / Styled Components / Figma',
     repositoryURL: 'https://github.com/ofrankowska/aleksandrafrankowska.pl',
     phoneSVG: phoneHabitTracker,
     computerSVG: computerHabitTracker,

@@ -6,7 +6,7 @@ const StyledText = styled.h1`
   display: inline-block;
   font-weight: ${({ theme, bold }) => (bold ? theme.semiBold : theme.medium)};
   font-size: ${({ theme }) => theme.fontSize.xl};
-  margin: 0.5em 0;
+  margin: 0 0 1.6rem;
   position: relative;
   ::after {
     opacity: ${({ withUnderline }) => (withUnderline ? 1 : 0)};
