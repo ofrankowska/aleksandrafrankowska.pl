@@ -1,3 +1,5 @@
+import { css } from 'styled-components';
+
 export const theme = {
   blue: '#05214A',
   yellow: '#F0C220',
@@ -14,4 +16,16 @@ export const theme = {
     xl: '4rem',
     xxl: '6rem',
   },
+  mq: {
+    mobile: '@media (max-width: 768px',
+    tablet: '@media (max-width: 1024px',
+  },
+  textHover: color =>
+    css`
+      :hover {
+        color: ${color};
+        transition: color 0.3s ease-out;
+        cursor: pointer;
+      }
+    `,
 };

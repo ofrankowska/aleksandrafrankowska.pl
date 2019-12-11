@@ -10,12 +10,12 @@ html {
     /* now 1rem === 10px */
 }
 body {
-    padding-left: 175px;
+    padding: 0 0 0 175px;
     min-height: 100vh;
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     color: ${({ theme }) => theme.blue};
-        margin: 0;
+    margin: 0;
 
 }
 `;

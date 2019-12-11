@@ -14,9 +14,9 @@ const projects = [
     goal:
       'Building the biggest project I have ever done by myself, using the knowledge I had gained during online courses and putting it into practise while also learning new things in the process.',
     technologies:
-      'React / react-transition-group /react-sortable-hoc / Material UI / OpenWeather API / Quotes Free API / FontAwesome',
+      'React / React Router / react-transition-group /react-sortable-hoc / Material UI / OpenWeather API / Quotes Free API / FontAwesome',
     demoURL: '',
-    repositoryURL: 'https://github.com/ofrankowska/react-dashboardr',
+    repositoryURL: 'https://github.com/ofrankowska/react-dashboard',
     phoneSVG: phonePersonalDashboard,
     computerSVG: computerPersonalDashboard,
   },

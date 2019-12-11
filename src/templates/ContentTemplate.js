@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import MainTemplate from 'templates/MainTemplate';
 
 const StyledWrapper = styled.div`
-  padding: 25px 25px 25px 75px;
+  padding: 25px 75px;
 `;
 const ContentTemplate = ({ children }) => (
   <MainTemplate>

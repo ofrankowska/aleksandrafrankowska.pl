@@ -3,14 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'gatsby';
-
-const onHover = ({ theme }) => `
-    :hover {
-      color: ${theme.yellow};
-      transition: color 0.3s ease-out;
-      cursor: pointer;
-  } 
-`;
+import Logo from 'components/Logo/Logo';
 
 const StyledWrapper = styled.div`
   position: fixed;
@@ -29,30 +22,6 @@ const StyledWrapper = styled.div`
   justify-content: space-between;
 `;
 
-const LogoWrapper = styled.div`
-  position: relative;
-  color: white;
-  text-decoration: none;
-  ${onHover};
-  p:first-child {
-    margin: 7px 0 0;
-    letter-spacing: 0.08rem;
-  }
-  p:last-child {
-    margin: 0 0 7px;
-  }
-  ::before,
-  ::after {
-    display: block;
-    position: absolute;
-    left: 50%;
-    margin-left: -22px;
-    content: '';
-    border-top: 0.3rem solid white;
-    width: 44px;
-  }
-`;
-
 const StyledLinkList = styled.ul`
   list-style: none;
   padding: 0;
@@ -62,8 +31,8 @@ const StyledLinkList = styled.ul`
 
 const NavigationItem = styled.li`
   margin: 40px 0;
-  ${onHover}
   position: relative;
+
   ::after {
     content: '';
     display: block;
@@ -79,7 +48,6 @@ const NavigationItem = styled.li`
   }
   :hover {
     ::after {
-      width: 100%;
       transform: scale(1);
     }
   }
@@ -88,6 +56,7 @@ const NavigationItem = styled.li`
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
+  ${({ theme }) => theme.textHover(theme.yellow)};
 `;
 
 const IconWrapper = styled.div`
@@ -99,19 +68,14 @@ const IconWrapper = styled.div`
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: white;
-  ${onHover}
+  ${({ theme }) => theme.textHover(theme.yellow)}
 `;
 const activeStyles = {
   color: '#F0C220',
 };
 const Sidebar = () => (
   <StyledWrapper>
-    <LogoWrapper>
-      <StyledLink to="/">
-        <p>Aleksandra</p>
-        <p>Frankowska</p>
-      </StyledLink>
-    </LogoWrapper>
+    <Logo withDecoration />
     <StyledLinkList>
       <NavigationItem>
         <StyledLink to="/about-me" activeStyle={activeStyles}>
