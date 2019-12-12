@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const StyledText = styled.h1`
   display: inline-block;
   font-weight: ${({ theme, bold }) => (bold ? theme.semiBold : theme.medium)};
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: ${({ theme }) => theme.fontSize.l};
   margin: 0 0 1.6rem;
   position: relative;
   ::after {
@@ -20,6 +20,9 @@ const StyledText = styled.h1`
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  ${({ theme }) => theme.mq.tablet} {
+    font-size: ${({ theme }) => theme.fontSize.xl};
   }
 `;
 

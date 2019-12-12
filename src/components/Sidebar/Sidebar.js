@@ -6,20 +6,23 @@ import { Link } from 'gatsby';
 import Logo from 'components/Logo/Logo';
 
 const StyledWrapper = styled.div`
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  padding: 40px 0;
-  height: 100vh;
-  width: 175px;
-  background-color: ${({ theme }) => theme.blue};
-  color: white;
-  font-weight: ${({ theme }) => theme.bold};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+  ${({ theme }) => theme.mq.desktop} {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    padding: 40px 0;
+    height: 100vh;
+    width: 175px;
+    background-color: ${({ theme }) => theme.blue};
+    color: white;
+    font-weight: ${({ theme }) => theme.bold};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 const StyledLinkList = styled.ul`

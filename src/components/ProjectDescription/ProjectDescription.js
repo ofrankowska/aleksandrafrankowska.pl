@@ -8,30 +8,56 @@ import styled from 'styled-components';
 import SVG from 'react-inlinesvg';
 
 const StyledWrapper = styled.div`
-  margin-bottom: 48px;
-  display: grid;
-  grid-template-columns: 1fr 430px;
-  grid-gap: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ${({ theme }) => theme.mq.desktop} {
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: 1fr 430px;
+    grid-gap: 2%;
+  }
 `;
 
-const MockupsWrapper = styled.div`
-  position: relative;
-  background-image: ${({ image }) => `url(${image})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 450px;
-`;
 const ButtonsWrapper = styled.div`
   margin-top: 0.48rem;
   button:first-child {
     margin-right: 1.6rem;
   }
 `;
-const StyledPhoneSVG = styled(SVG)`
-  transform: scale(0.45);
+const MockupsWrapper = styled.div`
   position: relative;
-  left: -10rem;
-  bottom: 10%;
+  background-image: ${({ image }) => `url(${image})`};
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 230px;
+  margin: 50px 0 80px;
+  width: 300px;
+  ${({ theme }) => theme.mq.tablet} {
+    height: 320px;
+    width: 400px;
+  }
+  ${({ theme }) => theme.mq.desktop} {
+    height: 450px;
+    margin: 0;
+  }
+`;
+const StyledPhoneSVG = styled(SVG)`
+  position: absolute;
+  transform: scale(0.35);
+  left: -150px;
+  bottom: -300px;
+  ${({ theme }) => theme.mq.tablet} {
+    transform: scale(0.4);
+    left: -145px;
+    bottom: -260px;
+  }
+  ${({ theme }) => theme.mq.desktop} {
+    transform: scale(0.45);
+    left: -140px;
+    bottom: -190px;
+  }
 `;
 const ProjectDescription = ({
   title,

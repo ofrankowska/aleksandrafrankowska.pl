@@ -11,6 +11,9 @@ const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.blue};
   padding: 20px;
   width: 100vw;
+  ${({ theme }) => theme.mq.desktop} {
+    display: none;
+  }
 `;
 const Header = () => {
   const [isMenuOpen, setMenuState] = useState(false);

@@ -7,18 +7,47 @@ import MainTemplate from '../templates/MainTemplate';
 const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
   background-image: ${`url(${img})`};
   background-repeat: no-repeat;
+  background-size: auto;
   background-position: bottom right;
+  ${({ theme }) => theme.mq.tablet} {
+    background-size: unset;
+  }
 `;
 
 const PageTitleWrapper = styled.div`
-  padding-left: 75px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 320px;
+  width: 330px;
+  ${({ theme }) => theme.mq.tablet} {
+    padding-left: 75px;
+    padding-top: 160px;
+  }
+  ${({ theme }) => theme.mq.desktop} {
+    width: 800px;
+    padding-bottom: 0;
+  }
 `;
 const PageTitle = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.xxl};
-  margin: 17vh 0 0;
+  margin: 0;
+  line-height: 6rem;
+`;
+
+const HeadingWrapper = styled.div`
+  display: none;
+  h1:first-child {
+    margin: 0;
+    padding-right: 10px;
+  }
+  ${({ theme }) => theme.mq.tablet} {
+    display: block;
+  }
+  ${({ theme }) => theme.mq.desktop} {
+    display: flex;
+  }
 `;
 
 const IndexPage = () => (
@@ -26,7 +55,10 @@ const IndexPage = () => (
     <StyledWrapper>
       <PageTitleWrapper>
         <PageTitle bold>Frontend Developer</PageTitle>
-        <Heading withUnderline>Aleksandra Frankowska</Heading>
+        <HeadingWrapper>
+          <Heading withUnderline>Aleksandra</Heading>
+          <Heading withUnderline>Frankowska</Heading>
+        </HeadingWrapper>
       </PageTitleWrapper>
     </StyledWrapper>
   </MainTemplate>

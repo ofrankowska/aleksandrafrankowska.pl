@@ -17,8 +17,8 @@ export const theme = {
     xxl: '6rem',
   },
   mq: {
-    mobile: '@media (max-width: 768px',
-    tablet: '@media (max-width: 1024px',
+    tablet: '@media (min-width: 768px)',
+    desktop: '@media (min-width: 1040px)',
   },
   textHover: color =>
     css`

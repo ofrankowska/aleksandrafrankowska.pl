@@ -10,13 +10,15 @@ html {
     /* now 1rem === 10px */
 }
 body {
-    padding: 0 0 0 175px;
+    padding: 0;
+    margin: 0;
     min-height: 100vh;
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     color: ${({ theme }) => theme.blue};
-    margin: 0;
-
+     ${({ theme }) => theme.mq.desktop} {
+         padding-left: 175px;
+     }
 }
 `;
 
