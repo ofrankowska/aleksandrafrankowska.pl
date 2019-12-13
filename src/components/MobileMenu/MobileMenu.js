@@ -49,6 +49,7 @@ const NavigationItem = styled.li`
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
+  ${({ theme }) => theme.textHover(theme.yellow)};
 `;
 
 const IconWrapper = styled.div`
@@ -58,6 +59,7 @@ const IconWrapper = styled.div`
 const StyledIcon = styled(FontAwesomeIcon)`
   color: white;
   margin: 0 12px;
+  ${({ theme }) => theme.textHover(theme.yellow)};
 `;
 
 const activeStyles = {

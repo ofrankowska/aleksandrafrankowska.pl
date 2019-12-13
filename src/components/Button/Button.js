@@ -6,7 +6,7 @@ const Button = styled.button`
   font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: ${({ theme }) => theme.medium};
   border-radius: 10px;
-  width: 127px;
+  width: 137px;
   height: 38px;
   position: relative;
   overflow: hidden;

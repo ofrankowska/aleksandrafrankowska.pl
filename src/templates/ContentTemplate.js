@@ -11,7 +11,6 @@ const StyledWrapper = styled.div`
   }
   ${({ theme }) => theme.mq.desktop} {
     text-align: left;
-    padding: 25px 75px;
   }
 `;
 const ContentTemplate = ({ children }) => (

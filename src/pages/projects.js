@@ -10,12 +10,12 @@ const projects = [
   {
     title: 'Personal Daschboard',
     idea:
-      'Creating a Personal Dashboard similar to "Momentum" extention avaiable on Chrome and Firefox.',
+      'Personal Dashboard featuring weather, to-do, focus of the day and inspirational quotes complete with drag & drop, animations, route transitions, form validations, and more.',
     goal:
-      'Building the biggest project I have ever done by myself, using the knowledge I had gained during online courses and putting it into practise while also learning new things in the process.',
+      'Building a complex project, putting a lot of knowledge I had gained into practise and learning a lot more in the process.',
     technologies:
-      'React / React Router / react-transition-group /react-sortable-hoc / Material UI / OpenWeather API / Quotes Free API / FontAwesome',
-    demoURL: '',
+      'React / React Router / react-transition-group /react-sortable-hoc / Material UI / OpenWeather API / CSS Animations / Quotes Free API / FontAwesome',
+    demoURL: 'https://ofrankowska.github.io/react-dashboard/',
     repositoryURL: 'https://github.com/ofrankowska/react-dashboard',
     phoneSVG: phonePersonalDashboard,
     computerSVG: computerPersonalDashboard,
@@ -23,12 +23,12 @@ const projects = [
   {
     title: 'Habit Tracker',
     idea:
-      "Let's face it, adopting new habits is pretty challenging but this Habit Tracker will make it easier for you. It will remind you every day to act. Completing your entries will feel rewarding and encourage you to keep going.",
+      'Habit Tracker that makes adopting new habits easier. It reminds you every day to complete activities that you want to be a part of your daily routine.',
     goal:
       'Becoming comfortable with JavaScript (especially ES6+ Features), working in the DOM without a library and implementing Local Storage.',
     technologies:
       'JavaScript / Bootstrap / CSS Animations / FontAwesome / uuid',
-    demoURL: 'https://ofrankowska.github.io/habit-tracke',
+    demoURL: 'https://ofrankowska.github.io/habit-tracker',
     repositoryURL: 'https://github.com/ofrankowska/habit-tracker',
     phoneSVG: phoneHabitTracker,
     computerSVG: computerHabitTracker,
@@ -36,10 +36,10 @@ const projects = [
   {
     title: 'Portofolio',
     idea:
-      'Creating an intuitive, minimalistic website that makes it easy to find what you want and is pretty nice to look at.',
+      'Creating an intuitive, minimalistic website that makes it easy to find information about me.',
     goal:
-      'Creating a website from scratch - staring with the design in Figma, development in Gatsby and deployment with Netlify.',
-    technologies: 'Gatsby / React / Styled Components / Figma',
+      'Creating everything from scratch - staring with the design in Figma and development in Gatsby using Styled Components, complete with deployment to Netlify and custom domain set up.',
+    technologies: 'Gatsby / Styled Components / Figma',
     repositoryURL: 'https://github.com/ofrankowska/aleksandrafrankowska.pl',
     phoneSVG: phoneHabitTracker,
     computerSVG: computerHabitTracker,

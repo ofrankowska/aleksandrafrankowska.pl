@@ -14,13 +14,13 @@ const StyledWrapper = styled.div`
   ${({ theme }) => theme.mq.desktop} {
     margin-bottom: 48px;
     display: grid;
-    grid-template-columns: 1fr 430px;
-    grid-gap: 2%;
+    grid-template-columns: 1fr 400px;
+    grid-gap: 4%;
   }
 `;
 
 const ButtonsWrapper = styled.div`
-  margin-top: 0.48rem;
+  margin: 4.8px 0;
   button:first-child {
     margin-right: 1.6rem;
   }
@@ -30,12 +30,12 @@ const MockupsWrapper = styled.div`
   background-image: ${({ image }) => `url(${image})`};
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  height: 230px;
-  margin: 50px 0 80px;
+  background-position: 0 20.8px;
+  height: 225px;
+  margin: 15px 0 80px;
   width: 300px;
   ${({ theme }) => theme.mq.tablet} {
-    height: 320px;
+    height: 300px;
     width: 400px;
   }
   ${({ theme }) => theme.mq.desktop} {
@@ -56,7 +56,7 @@ const StyledPhoneSVG = styled(SVG)`
   ${({ theme }) => theme.mq.desktop} {
     transform: scale(0.45);
     left: -140px;
-    bottom: -190px;
+    bottom: -160px;
   }
 `;
 const ProjectDescription = ({
