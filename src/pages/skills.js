@@ -6,6 +6,10 @@ const SkillsPage = () => (
   <ContentTemplate>
     <div>
       <Heading bold>Skills</Heading>
+      <p>
+        Consequat sit nostrud in cillum. Sit ut eu enim voluptate occaecat.
+        Laboris enim pariatur ex minim sunt ipsum ipsum et.
+      </p>
     </div>
   </ContentTemplate>
 );

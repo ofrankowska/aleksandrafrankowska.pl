@@ -12,6 +12,7 @@ const Button = styled.button`
   overflow: hidden;
   cursor: pointer;
   transition: color 0.3s ease-out;
+  margin: 4.8px 0;
   ::after {
     position: absolute;
     display: inline-block;

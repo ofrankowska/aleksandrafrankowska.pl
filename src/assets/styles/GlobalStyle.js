@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -11,13 +10,15 @@ html {
     /* now 1rem === 10px */
 }
 body {
-    padding-left: 175px;
+    padding: 0;
+    margin: 0;
     min-height: 100vh;
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     color: ${({ theme }) => theme.blue};
-        margin: 0;
-
+     ${({ theme }) => theme.mq.desktop} {
+         padding-left: 175px;
+     }
 }
 `;
 

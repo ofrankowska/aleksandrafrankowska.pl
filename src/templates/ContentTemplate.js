@@ -4,7 +4,15 @@ import PropTypes from 'prop-types';
 import MainTemplate from 'templates/MainTemplate';
 
 const StyledWrapper = styled.div`
-  padding: 25px 25px 25px 75px;
+  padding: 40px 20px;
+  text-align: center;
+  ${({ theme }) => theme.mq.tablet} {
+    padding: 40px 75px;
+  }
+  ${({ theme }) => theme.mq.desktop} {
+    text-align: left;
+    padding: 25px 75px;
+  }
 `;
 const ContentTemplate = ({ children }) => (
   <MainTemplate>
@@ -13,7 +21,10 @@ const ContentTemplate = ({ children }) => (
 );
 
 ContentTemplate.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 export default ContentTemplate;

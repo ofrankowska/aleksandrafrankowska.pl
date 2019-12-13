@@ -63,11 +63,14 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-svgr-loader',
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        rule: {
-          include: /assets/,
-        },
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`500`, `600`, `700`],
+          },
+        ],
       },
     },
   ],

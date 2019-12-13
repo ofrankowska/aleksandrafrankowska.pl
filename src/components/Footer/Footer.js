@@ -10,18 +10,20 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 20px 20px 75px;
-`;
-
-const StyledHeading = styled(Heading)`
-  margin: 0 0 5px;
+  padding: 20px;
+  ${({ theme }) => theme.mq.desktop} {
+    padding-left: 75px;
+  }
 `;
 
 const StyledLink = styled.a`
   color: ${({ theme }) => theme.blue};
-  font-size: ${({ theme }) => theme.fontSize.m};
+  font-size: ${({ theme }) => theme.fontSize.s};
   font-weight: ${({ theme }) => theme.medium};
   margin-bottom: auto;
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.fontSize.m};
+  }
 `;
 
 const StyledParagraph = styled(Paragraph)`
@@ -33,7 +35,7 @@ const StyledParagraph = styled(Paragraph)`
 
 const Footer = () => (
   <StyledWrapper>
-    <StyledHeading bold>get in touch</StyledHeading>
+    <Heading bold>get in touch</Heading>
     <StyledLink href="mailto:olafrankowska112@gmail.com">
       olafrankowska112@gmail.com
     </StyledLink>
