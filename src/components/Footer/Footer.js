@@ -11,7 +11,7 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  ${({ theme }) => theme.mq.desktop} {
+  ${({ theme }) => theme.mq.tablet} {
     padding-left: 75px;
   }
 `;
@@ -36,8 +36,8 @@ const StyledParagraph = styled(Paragraph)`
 const Footer = () => (
   <StyledWrapper>
     <Heading bold>get in touch</Heading>
-    <StyledLink href="mailto:olafrankowska112@gmail.com">
-      olafrankowska112@gmail.com
+    <StyledLink href="mailto:aleksandrafrankowska@hotmail.com">
+      aleksandrafrankowska@hotmail.com
     </StyledLink>
     <StyledParagraph>
       @ 2019 Aleksandra Frankowska. All rights reserved

@@ -10,6 +10,8 @@ html {
     /* now 1rem === 10px */
 }
 body {
+     width: 100%;
+    overflow-x: hidden; 
     padding: 0;
     margin: 0;
     min-height: 100vh;

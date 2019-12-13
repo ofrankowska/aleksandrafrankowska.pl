@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.blue};
   padding: 20px;
-  width: 100vw;
+  width: 100%;
   ${({ theme }) => theme.mq.desktop} {
     display: none;
   }
