@@ -16,7 +16,7 @@ const StyledWrapper = styled.div`
   }
 `;
 
-const PageTitleWrapper = styled.div`
+const StyledHeader = styled.header`
   padding-top: 40px;
   padding-left: 20px;
   padding-bottom: 320px;
@@ -28,18 +28,24 @@ const PageTitleWrapper = styled.div`
   ${({ theme }) => theme.mq.desktop} {
     width: 800px;
     padding-bottom: 0;
+    ${({ theme }) => theme.mq.huge} {
+      width: 1000px;
+    }
   }
 `;
 const PageTitle = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.xxl};
-  margin: 0;
-  line-height: 6rem;
+  margin: 0 0 10px;
+  line-height: 0.9;
+  ${({ theme }) => theme.mq.huge} {
+    font-size: ${({ theme }) => theme.fontSize.xxxl};
+  }
 `;
 
 const HeadingWrapper = styled.div`
   display: none;
   h1:first-child {
-    margin: 0;
+    margin: -4px 0;
     padding-right: 10px;
   }
   ${({ theme }) => theme.mq.tablet} {
@@ -53,13 +59,13 @@ const HeadingWrapper = styled.div`
 const IndexPage = () => (
   <MainTemplate>
     <StyledWrapper>
-      <PageTitleWrapper>
+      <StyledHeader>
         <PageTitle bold>Frontend Developer</PageTitle>
         <HeadingWrapper>
           <Heading withUnderline>Aleksandra</Heading>
           <Heading withUnderline>Frankowska</Heading>
         </HeadingWrapper>
-      </PageTitleWrapper>
+      </StyledHeader>
     </StyledWrapper>
   </MainTemplate>
 );

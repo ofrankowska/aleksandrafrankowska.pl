@@ -12,9 +12,10 @@ import { theme } from 'assets/styles/theme';
 const StyledWrapper = styled.div`
   min-height: calc(100vh - 93.2px);
   display: grid;
-  grid-template-rows: 1fr 165px;
+  grid-template-rows: 1fr 425px;
   ${theme.mq.desktop} {
     min-height: 100vh;
+    grid-template-rows: 1fr 165px;
   }
 `;
 
