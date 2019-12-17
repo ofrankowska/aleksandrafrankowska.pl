@@ -14,7 +14,7 @@ const projects = [
     goal:
       'Building a complex project, putting a lot of knowledge I had gained into practise and learning a lot more in the process.',
     technologies:
-      'React / React Router / react-transition-group /react-sortable-hoc / Material UI / OpenWeather API / CSS Animations / Quotes Free API / FontAwesome',
+      'React / React Router / react-transition-group /react-sortable-hoc / Material UI / React JSS / Styled Components / OpenWeather API / CSS Animations / Quotes Free API / FontAwesome',
     demoURL: 'https://ofrankowska.github.io/react-dashboard/',
     repositoryURL: 'https://github.com/ofrankowska/react-dashboard',
     phoneSVG: phonePersonalDashboard,

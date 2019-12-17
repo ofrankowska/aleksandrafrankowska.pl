@@ -7,7 +7,7 @@ const LogoWrapper = styled.div`
   position: relative;
   font-weight: ${({ theme }) => theme.bold};
   font-size: 1.7rem;
-  line-height: 1.8rem;
+  line-height: 1.1;
   cursor: pointer;
   p:first-child {
     margin: 7px 0 0;

@@ -3,7 +3,7 @@ import { css } from 'styled-components';
 export const theme = {
   blue: '#05214A',
   yellow: '#F0C220',
-  gray: '#DFDFDF',
+  gray: '#E3E4E6',
   medium: 500,
   semiBold: 600,
   bold: 700,
@@ -15,10 +15,12 @@ export const theme = {
     l: '2.8rem',
     xl: '4rem',
     xxl: '6rem',
+    xxxl: '8rem',
   },
   mq: {
     tablet: '@media (min-width: 768px)',
     desktop: '@media (min-width: 1040px)',
+    huge: '@media (min-width: 1340px)',
   },
   textHover: color =>
     css`
