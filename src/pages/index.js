@@ -23,13 +23,15 @@ const StyledHeader = styled.header`
   width: 330px;
   ${({ theme }) => theme.mq.tablet} {
     padding-left: 75px;
-    padding-top: 160px;
+    padding-top: 18vh;
   }
   ${({ theme }) => theme.mq.desktop} {
     width: 800px;
     padding-bottom: 0;
+
     ${({ theme }) => theme.mq.huge} {
       width: 1000px;
+      padding-top: 25vh;
     }
   }
 `;

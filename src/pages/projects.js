@@ -5,6 +5,8 @@ import phonePersonalDashboard from 'assets/images/phone-personal-dashboard.svg';
 import computerPersonalDashboard from 'assets/images/computer-personal-dashboard.svg';
 import phoneHabitTracker from 'assets/images/phone-habit-tracker.svg';
 import computerHabitTracker from 'assets/images/computer-habit-tracker.svg';
+import computerPortofolio from 'assets/images/computer-portofolio.svg';
+// import phonePortofolio from 'assets/images/phone-portofolio.svg';
 
 const projects = [
   {
@@ -41,8 +43,8 @@ const projects = [
       'Creating everything from scratch - staring with the design in Figma and development in Gatsby using Styled Components, complete with deployment to Netlify and custom domain set up.',
     technologies: 'Gatsby / Styled Components / Figma',
     repositoryURL: 'https://github.com/ofrankowska/aleksandrafrankowska.pl',
-    phoneSVG: phoneHabitTracker,
-    computerSVG: computerHabitTracker,
+    phoneSVG: '',
+    computerSVG: computerPortofolio,
   },
 ];
 
