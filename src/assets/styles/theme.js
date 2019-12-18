@@ -15,7 +15,7 @@ export const theme = {
     l: '2.8rem',
     xl: '4rem',
     xxl: '6rem',
-    xxxl: '8rem',
+    xxxl: '8.5rem',
   },
   mq: {
     tablet: '@media (min-width: 768px)',

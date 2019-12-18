@@ -24,7 +24,7 @@ const TextWrapper = styled.div`
     order: -1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
   }
 `;
 
@@ -68,15 +68,20 @@ const AboutMeggaPage = () => {
           />
         </ImageWrapper>
         <TextWrapper>
-          Irure adipisicing pariatur consectetur velit qui voluptate duis do id
-          incididunt ullamco. In ut sunt est dolore et mollit. Est duis sit duis
-          amet adipisicing eiusmod cillum Lorem duis anim est consequat occaecat
-          dolore. Velit irure sunt duis cillum incididunt sunt mollit consequat.
-          Veniam cillum mollit non irure esse ipsum in fugiat aliqua aliqua
-          occaecat. Dolor aute incididunt irure deserunt nisi et veniam laboris
-          quis deserunt incididunt. Dolore nisi dolore ipsum aliqua fugiat
-          consectetur in pariatur officia nisi pariatur in ipsum. Incididunt
-          Lorem labore qui adipisicing eiusmod nostrud sit irure magna.
+          {/* My favorite thing about frontend development is that I am able to combine logical thinking with creativity. I have always enjoyed a ... challenge, tackling things that are hard  and been a design enthusiast.
+          I love creating aesthetically pleasing and functional things. I
+          enjoy a challenge. Something I cannot stand is a task done capable of
+          quickly learning and delivering solutions as an individual as well ass
+          a part of a team. Passionate about sustainability, self
+          development/growth I am very self motivated and I am determined to
+          learn, grow and provide a high quality of work */}
+          Qui labore ea reprehenderit ut aliquip nostrud duis pariatur non et et
+          id. Consequat reprehenderit in quis eu elit deserunt. Incididunt
+          incididunt aute duis laboris ullamco eiusmod culpa velit cupidatat ad
+          tempor enim et. Irure ea deserunt deserunt ex commodo nulla. Est
+          voluptate sint ipsum amet nostrud officia reprehenderit veniam eu
+          enim. Cupidatat esse officia id commodo velit dolore sint non aute
+          quis ea ut do. Sint labore do commodo sint proident adipisicing est.
         </TextWrapper>
       </StyledWrapper>
     </ContentTemplate>

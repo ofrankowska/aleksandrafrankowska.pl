@@ -11,6 +11,8 @@ const StyledWrapper = styled.div`
   }
   ${({ theme }) => theme.mq.desktop} {
     text-align: left;
+    display: flex;
+    align-items: center;
   }
 `;
 const ContentTemplate = ({ children }) => (
