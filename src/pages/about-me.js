@@ -68,13 +68,16 @@ const AboutMeggaPage = () => {
           />
         </ImageWrapper>
         <TextWrapper>
-          {/* My favorite thing about frontend development is that I am able to combine logical thinking with creativity. I have always enjoyed a ... challenge, tackling things that are hard  and been a design enthusiast.
+          {/* My dream is to take part in projects that improve lives of those around me. My favorite thing about frontend development is that I am able to combine logical thinking with creativity. I have always enjoyed a ... challenge, tackling things that are hard  and been a design enthusiast.
           I love creating aesthetically pleasing and functional things. I
           enjoy a challenge. Something I cannot stand is a task done capable of
           quickly learning and delivering solutions as an individual as well ass
           a part of a team. Passionate about sustainability, self
           development/growth I am very self motivated and I am determined to
-          learn, grow and provide a high quality of work */}
+          learn, grow and provide a high quality of work 
+          I'm naturally curious, and perpetually working on improving my chops one problem at a time.
+          I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+          I prefer to keep learning, continue challenging myself, and do interesting things that matter. */}
           Qui labore ea reprehenderit ut aliquip nostrud duis pariatur non et et
           id. Consequat reprehenderit in quis eu elit deserunt. Incididunt
           incididunt aute duis laboris ullamco eiusmod culpa velit cupidatat ad

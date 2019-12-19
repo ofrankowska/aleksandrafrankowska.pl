@@ -18,7 +18,7 @@ const projects = [
     technologies:
       'React / React Router / react-transition-group /react-sortable-hoc / Material UI / React JSS / Styled Components / OpenWeather API / CSS Animations / Quotes Free API / FontAwesome',
     demoURL: 'https://ofrankowska.github.io/react-dashboard/',
-    repositoryURL: 'https://github.com/ofrankowska/react-dashboard',
+    repositoryURL: 'https://react-personal-dashboard.netlify.com/',
     phoneSVG: phonePersonalDashboard,
     computerSVG: computerPersonalDashboard,
   },
