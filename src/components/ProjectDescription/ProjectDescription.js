@@ -81,7 +81,7 @@ const ProjectDescription = ({
           <Subheading>built using</Subheading>
           <Paragraph>{technologies}</Paragraph>
           <ButtonsWrapper>
-            {title !== 'Portofolio' && (
+            {title !== 'Portfolio' && (
               <a href={demoURL} target="_blank" rel="noopener noreferrer">
                 <Button type="button">Live Demo</Button>
               </a>
