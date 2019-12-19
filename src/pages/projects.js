@@ -5,8 +5,8 @@ import phonePersonalDashboard from 'assets/images/phone-personal-dashboard.svg';
 import computerPersonalDashboard from 'assets/images/computer-personal-dashboard.svg';
 import phoneHabitTracker from 'assets/images/phone-habit-tracker.svg';
 import computerHabitTracker from 'assets/images/computer-habit-tracker.svg';
-import computerPortofolio from 'assets/images/computer-portofolio.svg';
-// import phonePortofolio from 'assets/images/phone-portofolio.svg';
+import computerPortfolio from 'assets/images/computer-portfolio.svg';
+import phonePortfolio from 'assets/images/phone-portfolio.svg';
 
 const projects = [
   {
@@ -36,15 +36,15 @@ const projects = [
     computerSVG: computerHabitTracker,
   },
   {
-    title: 'Portofolio',
+    title: 'Portfolio',
     idea:
       'Creating an intuitive, minimalistic website that makes it easy to find information about me.',
     goal:
       'Creating everything from scratch - staring with the design in Figma and development in Gatsby using Styled Components, complete with deployment to Netlify and custom domain set up.',
     technologies: 'Gatsby / Styled Components / Figma',
     repositoryURL: 'https://github.com/ofrankowska/aleksandrafrankowska.pl',
-    phoneSVG: '',
-    computerSVG: computerPortofolio,
+    phoneSVG: phonePortfolio,
+    computerSVG: computerPortfolio,
   },
 ];
 
