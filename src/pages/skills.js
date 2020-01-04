@@ -13,7 +13,6 @@ const StyledWrapper = styled.div`
   font-weight: ${({ theme }) => theme.bold};
   font-size: ${({ theme }) => theme.fontSize.m};
   flex-basis: 100%;
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -32,7 +31,6 @@ const InnerWrapper = styled.div`
   margin-bottom: -3px;
   ${({ theme }) => theme.mq.desktop} {
     text-align: center;
-    /* border: solid 3px; */
     height: 397.2px;
     margin: 16px;
   }

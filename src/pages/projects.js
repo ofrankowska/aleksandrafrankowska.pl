@@ -12,24 +12,23 @@ const projects = [
   {
     title: 'Personal Daschboard',
     idea:
-      'Personal Dashboard featuring weather, to-do, focus of the day and inspirational quotes complete with drag & drop, animations, route transitions, form validations, and more.',
+      'Personal Dashboard featuring weather, to-do, focus of the day and inspirational quotes, complete with drag & drop, animations, route transitions, form validations, and more.',
     goal:
       'Building a complex project, putting a lot of knowledge I had gained into practise and learning a lot more in the process.',
     technologies:
-      'React / React Router / react-transition-group /react-sortable-hoc / Material UI / React JSS / Styled Components / OpenWeather API / CSS Animations / Quotes Free API / FontAwesome',
-    demoURL: 'https://ofrankowska.github.io/react-dashboard/',
-    repositoryURL: 'https://react-personal-dashboard.netlify.com/',
+      'React / React Router / react-transition-group /react-sortable-hoc / uuid / Material UI / React JSS / Styled Components / OpenWeather API / CSS Animations / Quotes Free API / FontAwesome',
+    demoURL: 'https://react-personal-dashboard.netlify.com/',
+    repositoryURL: 'https://github.com/ofrankowska/react-dashboard',
     phoneSVG: phonePersonalDashboard,
     computerSVG: computerPersonalDashboard,
   },
   {
     title: 'Habit Tracker',
     idea:
-      'Habit Tracker that makes adopting new habits easier. It reminds you every day to complete activities that you want to be a part of your daily routine.',
+      'Habit Tracker makes adopting new habits easier. It reminds you every day to complete activities that you want to become a part of your daily routine and keeps you motivated.',
     goal:
-      'Becoming comfortable with JavaScript (especially ES6+ Features), working in the DOM without a library and implementing Local Storage.',
-    technologies:
-      'JavaScript / Bootstrap / CSS Animations / FontAwesome / uuid',
+      'Becoming comfortable with JavaScript (especially ES6+ Features), working in the DOM without a library, implementing Local Storage and using Bootstrap.',
+    technologies: 'JavaScript / Bootstrap / CSS Animations / FontAwesome',
     demoURL: 'https://ofrankowska.github.io/habit-tracker',
     repositoryURL: 'https://github.com/ofrankowska/habit-tracker',
     phoneSVG: phoneHabitTracker,
@@ -38,10 +37,10 @@ const projects = [
   {
     title: 'Portfolio',
     idea:
-      'Creating an intuitive, minimalistic website that makes it easy to find information about me.',
+      'Creating an intuitive, minimalistic website that makes it easy to find what is needed.',
     goal:
-      'Creating everything from scratch - staring with the design in Figma and development in Gatsby using Styled Components, complete with deployment to Netlify and custom domain set up.',
-    technologies: 'Gatsby / Styled Components / Figma',
+      'Doing everything from scratch - staring with the design in Figma and development in Gatsby using Styled Components, complete with deployment to Netlify and custom domain set up.',
+    technologies: 'Gatsby / Styled Components / FontAwesome / Figma',
     repositoryURL: 'https://github.com/ofrankowska/aleksandrafrankowska.pl',
     phoneSVG: phonePortfolio,
     computerSVG: computerPortfolio,

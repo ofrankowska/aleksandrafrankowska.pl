@@ -80,7 +80,7 @@ const Footer = () => (
       <Navigation footer />
     </MobileContentWrapper>
     <StyledParagraph>
-      @ 2019 Aleksandra Frankowska. All rights reserved
+      @ 2020 Aleksandra Frankowska. All rights reserved
     </StyledParagraph>
   </StyledWrapper>
 );

@@ -1,5 +1,6 @@
 import React from 'react';
 import ContentTemplate from 'templates/ContentTemplate';
+import Heading from 'components/Heading/Heading';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
@@ -24,7 +25,9 @@ const TextWrapper = styled.div`
     order: -1;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+  }
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.fontSize.m};
   }
 `;
 
@@ -42,7 +45,7 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const AboutMeggaPage = () => {
+const AboutMePage = () => {
   const data = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "portrait.jpg" }) {
@@ -73,22 +76,31 @@ const AboutMeggaPage = () => {
           enjoy a challenge. Something I cannot stand is a task done capable of
           quickly learning and delivering solutions as an individual as well ass
           a part of a team. Passionate about sustainability, self
-          development/growth I am very self motivated and I am determined to
-          learn, grow and provide a high quality of work 
-          I'm naturally curious, and perpetually working on improving my chops one problem at a time.
+          development/growth 
+          
           I like to code things from scratch, and enjoy bringing ideas to life in the browser.
-          I prefer to keep learning, continue challenging myself, and do interesting things that matter. */}
-          Qui labore ea reprehenderit ut aliquip nostrud duis pariatur non et et
-          id. Consequat reprehenderit in quis eu elit deserunt. Incididunt
-          incididunt aute duis laboris ullamco eiusmod culpa velit cupidatat ad
-          tempor enim et. Irure ea deserunt deserunt ex commodo nulla. Est
-          voluptate sint ipsum amet nostrud officia reprehenderit veniam eu
-          enim. Cupidatat esse officia id commodo velit dolore sint non aute
-          quis ea ut do. Sint labore do commodo sint proident adipisicing est.
+          I prefer to keep learning, continue challenging myself, and do interesting things that matter. 
+          
+          I have always enjoyed creating things
+          I enjoy developing my skills and passions.
+            Bringing ideas to life in the browrser using code is exciting to me. 
+          As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. 
+          */}
+          <Heading>
+            I want to make things that{' '}
+            <Heading withUnderline>make a difference.</Heading>
+          </Heading>
+          I am a graduate of Informatics and Econometrics, currently looking for
+          a Frontend Developmnet job. As a design ethusiast I find working on
+          the client-facing aspects of an application or website very appealing.
+          I have spent last couple of months furthering my development skills. I
+          am naturally curious, and perpetually working on improving my chops. I
+          am very self motivated and determined to learn, grow and provide a
+          high quality of work as an individual as well as a part of a team.
         </TextWrapper>
       </StyledWrapper>
     </ContentTemplate>
   );
 };
 
-export default AboutMeggaPage;
+export default AboutMePage;

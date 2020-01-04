@@ -7,6 +7,7 @@ const IconWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 25px;
+  width: 104px;
 `;
 
 const StyledIcon = styled(FontAwesomeIcon)`
