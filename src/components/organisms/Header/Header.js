@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Hamburger from 'components/Hamburger/Hamburger';
-import Logo from 'components/Logo/Logo';
-import MobileMenu from 'components/MobileMenu/MobileMenu';
+import Hamburger from 'components/atoms/Hamburger/Hamburger';
+import Logo from 'components/molecules/Logo/Logo';
+import MobileMenu from 'components/organisms/MobileMenu/MobileMenu';
 import styled from 'styled-components';
 
 const StyledWrapper = styled.div`

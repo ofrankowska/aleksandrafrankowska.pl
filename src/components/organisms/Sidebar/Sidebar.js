@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from 'components/Logo/Logo';
-import Navigation from 'components/Navigation/Navigation';
-import SocialIcons from 'components/SocialIcons/SocialIcons';
+import Logo from 'components/molecules/Logo/Logo';
+import Navigation from 'components/molecules/Navigation/Navigation';
+import SocialIcons from 'components/molecules/SocialIcons/SocialIcons';
 
 const StyledWrapper = styled.div`
   display: none;

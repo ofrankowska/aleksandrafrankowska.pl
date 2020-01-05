@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import SEO from 'components/seo';
-import Sidebar from 'components/Sidebar/Sidebar';
-import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
+import Sidebar from 'components/organisms/Sidebar/Sidebar';
+import Header from 'components/organisms/Header/Header';
+import Footer from 'components/organisms/Footer/Footer';
 import GlobalStyle from 'assets/styles/GlobalStyle';
 
 import { theme } from 'assets/styles/theme';

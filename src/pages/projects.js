@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentTemplate from 'templates/ContentTemplate';
-import ProjectDescription from 'components/ProjectDescription/ProjectDescription';
+import ProjectDescription from 'components/molecules/ProjectDescription/ProjectDescription';
 import phonePersonalDashboard from 'assets/images/phone-personal-dashboard.svg';
 import computerPersonalDashboard from 'assets/images/computer-personal-dashboard.svg';
 import phoneHabitTracker from 'assets/images/phone-habit-tracker.svg';
@@ -39,7 +39,7 @@ const projects = [
     idea:
       'Creating an intuitive, minimalistic website that makes it easy to find what is needed.',
     goal:
-      'Doing everything from scratch - staring with the design in Figma and development in Gatsby using Styled Components, complete with deployment to Netlify and custom domain set up.',
+      'Doing everything from scratch - staring with the design in Figma and development in Gatsby using Styled Components follwing Atomic Design principles, complete with deployment to Netlify and custom domain set up.',
     technologies: 'Gatsby / Styled Components / FontAwesome / Figma',
     repositoryURL: 'https://github.com/ofrankowska/aleksandrafrankowska.pl',
     phoneSVG: phonePortfolio,

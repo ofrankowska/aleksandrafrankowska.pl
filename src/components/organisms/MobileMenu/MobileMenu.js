@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Hamburger from 'components/Hamburger/Hamburger';
-import Navigation from 'components/Navigation/Navigation';
-import SocialIcons from 'components/SocialIcons/SocialIcons';
+import Hamburger from 'components/atoms/Hamburger/Hamburger';
+import Navigation from 'components/molecules/Navigation/Navigation';
+import SocialIcons from 'components/molecules/SocialIcons/SocialIcons';
 
 const StyledWrapper = styled.div`
   position: fixed;

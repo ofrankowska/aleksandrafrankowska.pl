@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Paragraph from 'components/Paragraph/Paragraph';
-import Heading from 'components/Heading/Heading';
-import Navigation from 'components/Navigation/Navigation';
+import Paragraph from 'components/atoms/Paragraph/Paragraph';
+import Heading from 'components/atoms/Heading/Heading';
+import Navigation from 'components/molecules/Navigation/Navigation';
 
 const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.blue};
