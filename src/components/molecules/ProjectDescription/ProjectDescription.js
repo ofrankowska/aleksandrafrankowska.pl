@@ -43,6 +43,7 @@ const MockupsWrapper = styled.div`
     margin: 0;
   }
 `;
+
 const StyledPhoneSVG = styled(SVG)`
   position: absolute;
   transform: scale(0.35);

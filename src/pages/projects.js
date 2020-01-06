@@ -2,10 +2,10 @@ import React from 'react';
 import ContentTemplate from 'templates/ContentTemplate';
 import ProjectDescription from 'components/molecules/ProjectDescription/ProjectDescription';
 import phonePersonalDashboard from 'assets/images/phone-personal-dashboard.svg';
-import computerPersonalDashboard from 'assets/images/png.png';
+import computerPersonalDashboard from 'assets/images/computer-personal-dashboard.png';
 import phoneHabitTracker from 'assets/images/phone-habit-tracker.svg';
-import computerHabitTracker from 'assets/images/computer-habit-tracker.svg';
-import computerPortfolio from 'assets/images/computer-portfolio.svg';
+import computerHabitTracker from 'assets/images/computer-habit-tracker.png';
+import computerPortfolio from 'assets/images/computer-portfolio.png';
 import phonePortfolio from 'assets/images/phone-portfolio.svg';
 
 const projects = [
