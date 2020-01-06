@@ -16,7 +16,7 @@ const projects = [
     goal:
       'Building a complex project, putting a lot of knowledge I had gained into practise and learning a lot more in the process.',
     technologies:
-      'React / React Router / react-transition-group /react-sortable-hoc / uuid / Material UI / React JSS / Styled Components / OpenWeather API / CSS Animations / Quotes Free API / FontAwesome',
+      'React / React Router / react-transition-group /react-sortable-hoc / uuid / Material UI / Styled Components / OpenWeather API / Quotes Free API / CSS Animations / FontAwesome',
     demoURL: 'https://react-personal-dashboard.netlify.com/',
     repositoryURL: 'https://github.com/ofrankowska/react-dashboard',
     phoneSVG: phonePersonalDashboard,
@@ -37,10 +37,10 @@ const projects = [
   {
     title: 'Portfolio',
     idea:
-      'Creating an intuitive, minimalistic website that makes it easy to find what is needed.',
+      'Creating an intuitive, minimalistic and fast website that makes it easy to find information about me.',
     goal:
-      'Doing everything from scratch - staring with the design in Figma and development in Gatsby using Styled Components follwing Atomic Design principles, complete with deployment to Netlify and custom domain set up.',
-    technologies: 'Gatsby / Styled Components / FontAwesome / Figma',
+      'Doing everything from scratch - staring with the design in Figma, then development in Gatsby using Styled Components and follwing Atomic Design principles, complete with deployment to Netlify and custom domain set up.',
+    technologies: 'Figma / Gatsby / Styled Components / FontAwesome',
     repositoryURL: 'https://github.com/ofrankowska/aleksandrafrankowska.pl',
     phoneSVG: phonePortfolio,
     computerSVG: computerPortfolio,
