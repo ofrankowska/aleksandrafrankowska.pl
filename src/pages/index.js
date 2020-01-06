@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading from 'components/Heading/Heading';
+import Heading from 'components/atoms/Heading/Heading';
 import styled from 'styled-components';
 import img from 'assets/images/woman-coding.svg';
 import MainTemplate from '../templates/MainTemplate';

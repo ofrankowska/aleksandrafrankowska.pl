@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Heading from 'components/Heading/Heading';
-import Subheading from 'components/Subheading/Subheading';
-import Paragraph from 'components/Paragraph/Paragraph';
-import Button from 'components/Button/Button';
+import Heading from 'components/atoms/Heading/Heading';
+import Subheading from 'components/atoms/Subheading/Subheading';
+import Paragraph from 'components/atoms/Paragraph/Paragraph';
+import Button from 'components/atoms/Button/Button';
 import styled from 'styled-components';
 import SVG from 'react-inlinesvg';
 

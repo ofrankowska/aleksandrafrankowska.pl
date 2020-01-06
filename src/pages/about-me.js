@@ -1,6 +1,7 @@
 import React from 'react';
 import ContentTemplate from 'templates/ContentTemplate';
-import Heading from 'components/Heading/Heading';
+import Heading from 'components/atoms/Heading/Heading';
+import Paragraph from 'components/atoms/Paragraph/Paragraph';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
@@ -25,9 +26,6 @@ const TextWrapper = styled.div`
     order: -1;
     display: flex;
     flex-direction: column;
-  }
-  ${({ theme }) => theme.mq.desktop} {
-    font-size: ${({ theme }) => theme.fontSize.m};
   }
 `;
 
@@ -90,13 +88,16 @@ const AboutMePage = () => {
             I want to make things that{' '}
             <Heading withUnderline>make a difference.</Heading>
           </Heading>
-          I am a graduate of Informatics and Econometrics, currently looking for
-          a Frontend Developmnet job. As a design ethusiast I find working on
-          the client-facing aspects of an application or website very appealing.
-          I have spent last couple of months furthering my development skills. I
-          am naturally curious, and perpetually working on improving my chops. I
-          am very self motivated and determined to learn, grow and provide a
-          high quality of work as an individual as well as a part of a team.
+          <Paragraph>
+            I am a graduate of Informatics and Econometrics, currently looking
+            for a Frontend Developmnet job. As a design ethusiast I find working
+            on the client-facing aspects of an application or website very
+            appealing. I have spent last couple of months furthering my
+            development skills. I am naturally curious, and perpetually working
+            on improving my chops. I am very self motivated and determined to
+            learn, grow and provide a high quality of work as an individual as
+            well as a part of a team.
+          </Paragraph>
         </TextWrapper>
       </StyledWrapper>
     </ContentTemplate>
