@@ -3,9 +3,9 @@ import ContentTemplate from 'templates/ContentTemplate';
 import styled from 'styled-components';
 
 const skills = [
-  ['HTML', 'CSS', 'JavaScript', 'React', 'MySQL'],
-  ['Responsive Design', 'Styled Components', 'Bootstrap', 'Material UI'],
-  ['GIT', 'GitHub', 'VSCode', 'Chrome/React DevTools', 'Gatsby', 'Wordpress'],
+  ['HTML', 'CSS', 'Responsive Design', 'Bootstrap', 'JavaScript', 'MySQL'],
+  ['React', 'Styled Components', 'Gatsby', 'Material UI'],
+  ['GIT', 'GitHub', 'VSCode', 'Chrome/React DevTools', 'Wordpress'],
   ['Figma', 'GIMP', 'VEGAS Pro'],
 ];
 

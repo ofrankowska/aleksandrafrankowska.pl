@@ -1,6 +1,6 @@
 import React from 'react';
 import ContentTemplate from 'templates/ContentTemplate';
-import Heading from 'components/atoms/Heading/Heading';
+import Subheading from 'components/atoms/Subheading/Subheading';
 import Paragraph from 'components/atoms/Paragraph/Paragraph';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -83,20 +83,27 @@ const AboutMePage = () => {
           I enjoy developing my skills and passions.
             Bringing ideas to life in the browrser using code is exciting to me. 
           As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. 
+          the endless possibilities that code brings
           */}
-          <Heading>
-            I want to make things that{' '}
+          {/* <Heading>
+            I want to make things that
             <Heading withUnderline>make a difference.</Heading>
-          </Heading>
+          </Heading> */}
+          <Subheading>Hello,</Subheading>
           <Paragraph>
-            I am a graduate of Informatics and Econometrics, currently looking
-            for a Frontend Developmnet job. As a design ethusiast I find working
-            on the client-facing aspects of an application or website very
-            appealing. I have spent last couple of months furthering my
-            development skills. I am naturally curious, and perpetually working
-            on improving my chops. I am very self motivated and determined to
-            learn, grow and provide a high quality of work as an individual as
-            well as a part of a team.
+            my name is Ola. I am a graduate of Informatics and Econometrics,
+            currently looking for a Frontend Developmnet job.
+          </Paragraph>
+          <Paragraph>
+            I was driven to Frontend Development by my passion for creating
+            things. I find bringing ideas to life in the browser very exciting.
+            I have dedicated the last few months to furthering my skills and
+            exploring the endless possibilities that code brings.
+          </Paragraph>
+          <Paragraph>
+            I am naturally curious and perpetually working on improving my
+            chops. I am determined to learn, grow and provide a high quality of
+            work as an individual as well as a part of a team.
           </Paragraph>
         </TextWrapper>
       </StyledWrapper>
