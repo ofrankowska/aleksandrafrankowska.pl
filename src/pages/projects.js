@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'Personal Daschboard',
     idea:
-      'Personal Dashboard featuring weather, to-do, focus of the day and inspirational quotes, complete with drag & drop, animations, route transitions, form validations, and more.',
+      'Personal Dashboard featuring weather, to-do, clock, focus of the day and inspirational quotes, complete with drag & drop, animations, route transitions, form validations, and local storage.',
     goal:
       'Building a complex project, putting a lot of knowledge I had gained into practise and learning a lot more in the process.',
     technologies:
