@@ -12,7 +12,7 @@ const IconWrapper = styled.div`
 const SocialIcons = () => (
   <IconWrapper>
     <SocialIcon url="https://github.com/ofrankowska/" icon={faGithubSquare} />
-    <SocialIcon url="www.linkedin.com/in/ofrankowska" icon={faLinkedin} />
+    <SocialIcon url="https://.linkedin.com/in/ofrankowska" icon={faLinkedin} />
   </IconWrapper>
 );
 export default SocialIcons;
