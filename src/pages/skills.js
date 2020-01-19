@@ -3,7 +3,15 @@ import ContentTemplate from 'templates/ContentTemplate';
 import styled from 'styled-components';
 
 const skills = [
-  ['HTML', 'CSS', 'Responsive Design', 'Bootstrap', 'JavaScript', 'MySQL'],
+  [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'SASS',
+    'Responsive Design',
+    'Bootstrap',
+    'MySQL',
+  ],
   ['React', 'Styled Components', 'Gatsby', 'Material UI'],
   ['GIT', 'GitHub', 'VSCode', 'Chrome/React DevTools', 'Wordpress'],
   ['Figma', 'GIMP', 'VEGAS Pro'],

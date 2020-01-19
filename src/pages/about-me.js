@@ -96,9 +96,9 @@ const AboutMePage = () => {
           </Paragraph>
           <Paragraph>
             I was driven to Frontend Development by my passion for creating
-            things. I find bringing ideas to life in the browser very exciting.
-            I have dedicated the last few months to furthering my skills and
-            exploring the endless possibilities that code brings.
+            things. I love bringing ideas to life in the browser. I have
+            dedicated the last few months to furthering my skills and exploring
+            the endless possibilities that code brings.
           </Paragraph>
           <Paragraph>
             I am naturally curious and perpetually working on improving my
