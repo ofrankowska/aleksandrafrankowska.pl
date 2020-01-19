@@ -3,18 +3,10 @@ import ContentTemplate from 'templates/ContentTemplate';
 import styled from 'styled-components';
 
 const skills = [
-  [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'SASS',
-    'Responsive Design',
-    'Bootstrap',
-    'MySQL',
-  ],
+  ['HTML', 'CSS', 'JavaScript', 'SASS', 'Responsive Design', 'Bootstrap'],
   ['React', 'Styled Components', 'Gatsby', 'Material UI'],
-  ['GIT', 'GitHub', 'VSCode', 'Chrome/React DevTools', 'Wordpress'],
-  ['Figma', 'GIMP', 'VEGAS Pro'],
+  ['GIT', 'GitHub', 'Visual Studio Code', 'Chrome/React DevTools', 'Wordpress'],
+  ['MySQL', 'Figma', 'GIMP', 'VEGAS Pro'],
 ];
 
 const StyledWrapper = styled.div`
